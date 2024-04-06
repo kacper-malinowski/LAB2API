@@ -14,8 +14,6 @@ namespace APIGUI {
             Database.EnsureCreated();
         }
 
-        
-
         protected override void OnConfiguring(DbContextOptionsBuilder options) {
             options.UseSqlite(@"Data Source=Cosm.db");
         }
